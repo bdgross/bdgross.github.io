@@ -13,3 +13,8 @@ hr {height:2px;
     background-color:gray
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
