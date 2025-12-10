@@ -4,13 +4,13 @@ My personal website with links and selected works.
 
 ## Description
 
-In addition to an intro on what I do and links with descriptions, there are images from print designs.
+Basic code with text, links and images.
 
 ## Getting Started
 
 ### Prerequisites
 
-No special software, libraries, or tools need to be installed before running the project. 
+None. 
 
 
 
