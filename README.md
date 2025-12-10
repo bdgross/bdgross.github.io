@@ -1,6 +1,6 @@
 # Brian Gross portfolio
 
-Personal website with links and selected works.
+My personal website with links and selected works.
 
 ## Description
 
