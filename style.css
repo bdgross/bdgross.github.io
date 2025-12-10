@@ -6,3 +6,10 @@ h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300; /* Example for a lighter weight */
 }
+
+hr {height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray
+}
+
