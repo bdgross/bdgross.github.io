@@ -44,7 +44,7 @@ ul li a:hover {
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: dark gray;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -52,11 +52,11 @@ ul li a:hover {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #light gray;
+  color: dark gray;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: light gray;
+  color: dark gray;
 }
