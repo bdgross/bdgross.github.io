@@ -19,20 +19,21 @@ h1, h3, .project {
 }
 
 p {
-  margin: 14px 0;
+  margin: 14px 0px;
 }
 
 p.project {
   margin-bottom: 7px;
 }
 
-hr {width:100%;
-    text-align: left;
-    margin-left: 0;
-    height:1px;
-    border-width:0;
-    color:gray;
-    background-color:white;
+hr {
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
+  height: 1px;
+  border-width: 0;
+  color:gray;
+  background-color: white;
 }
 
 ul {
@@ -44,7 +45,7 @@ ul {
 }
 
 ul li {
-  margin: 14px 0;
+  margin: 14px 0px;
 }
 
 /* ul li a {
@@ -61,6 +62,7 @@ ul li a:hover {
 .topnav {
   background-color: white;
   overflow: hidden;
+  max-width: 768px;
 }
 
 .topnav a {
