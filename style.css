@@ -37,7 +37,7 @@ ul {
   /* display: flex; */
 }
 
-li {
+ul li {
   margin: 14px;
 }
 
