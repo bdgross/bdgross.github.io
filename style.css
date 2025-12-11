@@ -37,6 +37,10 @@ ul {
   /* display: flex; */
 }
 
+li {
+  margin: 14px;
+}
+
 /* ul li a {
   display: block;
   color: white;
