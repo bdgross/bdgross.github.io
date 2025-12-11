@@ -32,8 +32,8 @@ hr {
   margin-left: 0;
   height: 1px;
   border-width: 0;
-  color:gray;
-  background-color: white;
+  color:#808080;
+  background-color: #FFFFFF;
 }
 
 ul {
@@ -50,24 +50,24 @@ ul li {
 
 /* ul li a {
   display: block;
-  color: white;
+  color: #FFFFFF;
   padding: 14px 16px;
   text-decoration: none;
 } */
 
 ul li a:hover {
-  background-color: white;
+  background-color: #FFFFFF;
 } 
 
 .topnav {
-  background-color: white;
+  background-color: #FFFFFF;
   overflow: hidden;
   max-width: 768px;
 }
 
 .topnav a {
   float: left;
-  color: darkestgray;
+  color: #A9A9A9;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -75,11 +75,11 @@ ul li a:hover {
 }
 
 .topnav a:hover {
-  background-color: #lightestgray;
-  color: dark gray;
+  background-color: #d3d3d3;
+  color: #A9A9A9;
 }
 
 .topnav a.active {
-  background-color: white;
-  color: dark gray;
+  background-color: #FFFFFF;
+  color: #A9A9A9;
 }
