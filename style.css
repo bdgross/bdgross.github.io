@@ -9,11 +9,9 @@ body {
 
 h1, h3, .project {
   font-weight: 700; 
+  margin-block-end: 0;
 }
 
-p.project {
-  margin-bottom: 0;
-}
 
 hr {height:2px;
     border-width:0;
