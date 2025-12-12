@@ -27,6 +27,10 @@ p.project {
   margin-bottom: 7px;
 }
 
+a {
+    color: #000000;
+}
+
 hr {
   width: 100%;
   text-align: left;
@@ -64,11 +68,12 @@ ul li a:hover {
   background-color: #FFFFFF;
   overflow: hidden;
   max-width: 768px;
+  margin: 0 auto;
 }
 
 .topnav a {
   float: left;
-  color: #A9A9A9;
+  color: #696969;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -77,10 +82,11 @@ ul li a:hover {
 
 .topnav a:hover {
   background-color: #d3d3d3;
-  color: #A9A9A9;
+  color: #696969;
 }
 
 .topnav a.active {
   background-color: #FFFFFF;
-  color: #A9A9A9;
+  color: #696969;
+  border-radius: 7px;
 }
