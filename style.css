@@ -81,12 +81,16 @@ ul li a:hover {
 }
 
 .topnav a:hover {
-  background-color: #d3d3d3;
-  color: #696969;
+  background-color: none;
+  color: #000000;
   border-radius: 7px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .topnav a.active {
   background-color: #FFFFFF;
-  color: #696969;
+  color: #000000;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
