@@ -109,3 +109,10 @@ ul li a:hover {
   display: flex;
   gap: 1rem:
 }
+
+img {
+  width: 46%;
+  border: solid;
+  border-color: #d3d3d3;
+  margin: 5px;
+}
