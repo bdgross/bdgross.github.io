@@ -2,27 +2,36 @@
   box-sizing: border-box; 
 }
 
+:root {
+  --space: 14px;
+  --color-bg: #FFFFFF;
+  --color-text: #222;
+  --color-link-hover: #ddd;
+}
+
 body, h1, h2, h3, h4, figure, blockquote, dl, dd {
   margin: 0; 
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* — Layout / Container — */
 .container {
   max-width: 768px;
   margin: 0 auto;
   padding: 14px;
 }
 
+/* — Typography — */
 h1, h3 {
   font-weight: 700; 
   margin-bottom: 7px;
 }
 
 p {
-  margin: 14px 0px;
+  margin: var(--space) 0;
 }
 
-p.project {
+p.label {
   font-weight: 700;
   margin-bottom: 7px;
 }
@@ -38,13 +47,13 @@ hr {
   height: 1px;
   border-width: 0;
   color:#808080;
-  background-color: #FFFFFF;
+  background-color: var(--color-bg);
 }
 
 ul {
   list-style-type: inherit;
   margin: 0;
-  padding: 14px;
+  padding: var(--space);
   background-color: inherit;
   /* display: flex; */
 }
@@ -61,19 +70,21 @@ ul li {
 } */
 
 ul li a:hover {
-  background-color: #FFFFFF;
+  background-color: var(--color-bg);
 } 
 
+/* — Navigation — */
 .topnav {
-  background-color: #FFFFFF;
+  background-color: var(--color-bg);
   overflow: hidden;
   max-width: 768px;
   margin: 0px auto;
 }
 
 .topnav a {
-  float: left;
-  color: #696969;
+  display: flex;
+  gap: 1rem;
+  color: var(--color-text);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -82,15 +93,15 @@ ul li a:hover {
 
 .topnav a:hover {
   background-color: none;
-  color: #000000;
+  color: var(--color-link-hover);
   border-radius: 7px;
   text-decoration: underline;
   text-underline-offset: 5px;
 }
 
 .topnav a.active {
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   text-decoration: underline;
   text-underline-offset: 5px;
 }
