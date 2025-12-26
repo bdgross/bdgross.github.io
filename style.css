@@ -92,7 +92,6 @@ ul li a:hover {
 }
 
 .topnav a:hover {
-  background-color: none;
   color: var(--color-link-hover);
   border-radius: 7px;
   text-decoration: underline;
