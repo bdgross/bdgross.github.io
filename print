@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="/style.css">
+
+        <title>My work</title>
+    </head>
+    <body>
+
+     <div class="topnav">
+  <a href="/index.html">Home</a>
+  <a href="/digital.html">Digital</a>
+  <a class="active" href="/print.html">Print</a>
+  <a href="/about.html">About</a>
+</div>
+        <div class="container">
+
+
+<h3>Newspaper pages</h3>
+<p>Examples from print highlighting art direction, typography and data visualization:</p>
+<div class"grid">
+<img src="/img/1968cover2018.jpg" alt="">
+<img src="/img/SportsNCAA2012.jpg" alt="">
+<img src="/img/SportsNFL2012.jpg" alt="">
+<img src="/img/A1ShakenScience2015.jpg" alt="">
+ <img src="/img/A1ObamaElection2012.jpg" alt="">
+<img src="/img/ObamaBroadCover2017.jpg" alt="">
+<img src="/img/ObamaBookCover2017.jpg" alt="">
+<img src="/img/ObamaTab2017.jpg" alt="">
+</div>
+        </div>
+    </body>
+    </html>
