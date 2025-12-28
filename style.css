@@ -112,6 +112,8 @@ ul li a:hover {
 
 img {
   width: 46%;
+  max-width: 100%
+  height: auto;
   border: solid;
   border-color: #d3d3d3;
   border-width: 1px;
