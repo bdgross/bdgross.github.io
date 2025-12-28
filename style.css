@@ -110,16 +110,16 @@ ul li a:hover {
   gap: 1rem:
 }
 
+@media only screen and (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+}
+
 img {
   width: 46%;
   border: solid;
   border-color: #d3d3d3;
   border-width: 1px;
   margin: 5px;
-}
-
-@media only screen and (max-width: 600px) {
-  img {
-    width: 100%;
-  }
 }
