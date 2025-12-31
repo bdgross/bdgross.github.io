@@ -127,6 +127,10 @@ figure img {
 }
 
 @media only screen and (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+  
   figure img {
     width: 100%;
   }
