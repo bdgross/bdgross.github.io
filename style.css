@@ -100,8 +100,11 @@ ul li a:hover {
   text-underline-offset: 5px;
 }
 
-figure img {
+figure {
   display: flex;
+}
+
+figure img {
   width: 46%;
   max-width: 100%;
   height: auto;
