@@ -71,7 +71,6 @@ ul li a:hover {
 /* — Navigation — */
 .topnav {
   display: flex;
-  gap: 1rem;
   background-color: var(--color-bg);
   overflow: hidden;
   max-width: 768px;
