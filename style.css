@@ -122,6 +122,10 @@ figure img {
   width: 93.5%;
 }
 
+.full img {
+  width: 93.5%;
+}
+
 @media only screen and (max-width: 600px) {
   figure img {
     width: 100%;
