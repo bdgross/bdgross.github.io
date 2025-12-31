@@ -114,7 +114,7 @@ figure img {
   margin: 5px;
 }
 
-figure img.full {
+.full img {
   width: 100%;
 }
 
