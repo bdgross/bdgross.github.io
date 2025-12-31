@@ -31,11 +31,6 @@ p {
   margin: var(--space) 0;
 }
 
-p.label {
-  font-weight: 700;
-  margin-bottom: 7px;
-}
-
 a {
     color: #000000;
 }
@@ -110,7 +105,7 @@ ul li a:hover {
   gap: 1rem:
 }
 
-img {
+figure {
   width: 46%;
   max-width: 100%;
   height: auto;
@@ -121,7 +116,7 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
-  img {
+  figure {
     width: 100%;
   }
 }
