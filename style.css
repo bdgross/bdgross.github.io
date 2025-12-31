@@ -101,20 +101,19 @@ ul li a:hover {
 
 figure {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 img {
   width: 46%;
   max-width: 100%;
   height: auto;
+  display: block;
   border: solid;
   border-color: #d3d3d3;
   border-width: thin;
   margin: 30px 0 15px 0;
-}
-
-figure img {
-  margin: 0 10px 10px 0;
 }
 
 .full {
