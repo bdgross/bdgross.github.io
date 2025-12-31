@@ -108,17 +108,17 @@ img {
   width: 46%;
   max-width: 100%;
   height: auto;
-  margin: 0 5px 5px 0;
-}
-
-figure img {
   border: solid;
   border-color: #d3d3d3;
   border-width: thin;
-  margin: 5px;
+  margin: 30px 0 15px 0;
 }
 
-.full img {
+figure img {
+  margin: 0 10px 10px 0;
+}
+
+.full {
   width: 93.5%;
 }
 
