@@ -100,12 +100,8 @@ ul li a:hover {
   text-underline-offset: 5px;
 }
 
-.grid {
-  display: flex;
-  gap: 1rem:
-}
-
 figure img {
+  display: flex;
   width: 46%;
   max-width: 100%;
   height: auto;
@@ -113,6 +109,10 @@ figure img {
   border-color: #d3d3d3;
   border-width: thin;
   margin: 5px;
+}
+
+figure img.full {
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
