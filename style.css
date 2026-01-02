@@ -105,8 +105,11 @@ figure {
   gap: 10px;
 }
 
+.grid {
+  width: 48%;
+}
+
 img {
-  width: 46%;
   max-width: 100%;
   height: auto;
   display: block;
