@@ -116,7 +116,7 @@ img {
   border: solid;
   border-color: #d3d3d3;
   border-width: thin;
-  margin: 30px 0 15px 0;
+  margin: 30px 0 5px 0;
 }
 
 .full {
@@ -125,11 +125,13 @@ img {
 
 .full img {
   width: 100%;
+  margin-bottom: 0;
 }
 
 figcaption {
   font-size: .75rem;
   color: #595959;
+  margin-bottom: 15px
 }
 
 @media only screen and (max-width: 600px) {
