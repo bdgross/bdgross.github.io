@@ -31,6 +31,7 @@ h3 {
   text-transform: uppercase; 
   letter-spacing: 0.3em;
   margin-bottom: 7px;
+  margin-top: 30px;
   font-weight: 300;
 }
 
@@ -87,6 +88,7 @@ ul li a:hover {
   overflow: hidden;
   max-width: 768px;
   margin: 0px auto;
+  align-items: flex-end;
 }
 
 .topnav a {
@@ -95,7 +97,6 @@ ul li a:hover {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 14px;
-  align-items: flex-end;
   height: 30px;
 }
 
@@ -115,7 +116,7 @@ ul li a:hover {
   font-weight: 700;
 }
 
-a.title {
+.topnav a.title {
   font-size: 24px;
 }
 
