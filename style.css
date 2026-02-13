@@ -41,6 +41,7 @@ h4 a {
 
 p {
   margin: var(--space) 0;
+  font-weight: 300;
 }
 
 a {
