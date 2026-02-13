@@ -32,7 +32,7 @@ p {
   margin: var(--space) 0;
 }
 
-title {
+a.title {
   font-size: 24px;
 }
 
