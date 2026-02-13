@@ -31,6 +31,10 @@ p {
   margin: var(--space) 0;
 }
 
+title {
+  font-size: 24px;
+}
+
 a {
     color: #000000;
 }
@@ -71,6 +75,7 @@ ul li a:hover {
 /* — Navigation — */
 .topnav {
   display: flex;
+  gap: 12px;
   background-color: var(--color-bg);
   overflow: hidden;
   max-width: 768px;
@@ -82,7 +87,9 @@ ul li a:hover {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
+  align-items: flex-end;
+  height: 150px;
 }
 
 .topnav a:hover {
