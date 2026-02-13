@@ -22,10 +22,15 @@ body, h1, h2, h3, h4, figure, blockquote, dl, dd {
 }
 
 /* — Typography — */
+h2 {
+  font-weight: unset;
+}
+
 h3 {
   text-transform: uppercase; 
   letter-spacing: 0.3em;
   margin-bottom: 7px;
+  font-weight: unset;
 }
 
 p {
@@ -94,7 +99,7 @@ ul li a:hover {
   text-decoration: none;
   font-size: 14px;
   align-items: flex-end;
-  height: 150px;
+  height: 60px;
 }
 
 .topnav a:hover {
