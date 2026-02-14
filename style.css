@@ -114,6 +114,7 @@ ul li a:hover {
 /*  overflow: hidden; */
   max-width: 768px;
   margin: 30px auto;
+/*  margin-right: calc(100% - 100vs); */
   align-items: flex-end;
 }
 
