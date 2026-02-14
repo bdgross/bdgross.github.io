@@ -193,6 +193,11 @@ figcaption {
   margin-bottom: 75px
 }
 
+.credit {
+  font-size: 1rem;
+  margin-bottom: 60px;
+}
+
 @media only screen and (max-width: 600px) {
   .grid {
     width: 100%;
