@@ -45,7 +45,7 @@ h3 {
   letter-spacing: 0.3em;
   margin-bottom: 7px;
   margin-top: 30px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 h4 {
@@ -111,7 +111,6 @@ ul li a:hover {
 .topnav {
   display: flex;
   gap: 0.5rem;
-  background-color: var(--color-bg);
 /*  overflow: hidden; */
   max-width: 768px;
   margin: 30px auto;
@@ -126,6 +125,7 @@ ul li a:hover {
   text-decoration: none;
   font-size: 14px;
   height: 30px;
+  flex-grow: 1;
 }
 
 .topnav a:hover {
@@ -148,7 +148,8 @@ ul li a:hover {
   font-size: 24px;
   padding-top: 5px;
   padding-left: 14px;
-  flex-grow: 2;
+  flex-grow: 4;
+  font-weight: 300;
 }
 
 figure {
@@ -169,7 +170,7 @@ img {
   border: solid;
   border-color: #d3d3d3;
   border-width: thin;
-  margin: 75px 0 15px 0;
+  margin: 15px 0 15px 0;
 }
 
 .grid img {
@@ -188,7 +189,7 @@ img {
 figcaption {
   font-size: 1rem;
   color: #595959;
-  margin-bottom: 15px
+  margin-bottom: 75px
 }
 
 @media only screen and (max-width: 600px) {
