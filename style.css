@@ -9,10 +9,23 @@
   --color-link-hover: #ddd;
 }
 
+/* Detect user's preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --text: #e0e0e0;
+    --link: #66b3ff;
+    --accent: #ff6b6b;
+  }
+}
+
 body, h1, h2, h3, h4, figure, blockquote, dl, dd {
   margin: 0; 
   font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
 }
+
 
 /* — Layout / Container — */
 .container {
@@ -51,6 +64,12 @@ p {
 
 a {
     color: #000000;
+}
+
+/* Make sure focus indicators are visible */
+a:focus, button:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 hr {
