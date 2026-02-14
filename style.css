@@ -65,7 +65,7 @@ p {
 }
 
 a {
-    color: #000000;
+  color: var(--text);
 }
 
 /* Make sure focus indicators are visible */
