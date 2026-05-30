@@ -217,9 +217,7 @@ figcaption {
   min-width: 326px !important; 
 }
 
-iframe#instagram-embed-0 {
-    max-height: 610px;
-}
+
 
 @media only screen and (max-width: 600px) {
   .grid {
