@@ -208,7 +208,6 @@ figcaption {
   flex-wrap: wrap; /* Allows them to stack on mobile */
   gap: 20px;       /* Space between the posts */
   justify-content: center;
-  margin: 28px 0;
 }
 
 .ig-container .instagram-media {
