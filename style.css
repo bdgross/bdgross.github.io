@@ -231,4 +231,7 @@ figcaption {
   img {
     width: 100%;
   }
-}
+
+  iframe.instagram-media-rendered {
+    max-height: 70vh;
+  }
