@@ -36,11 +36,13 @@ body, h1, h2, h3, h4, figure, blockquote, dl, dd {
 
 /* — Typography — */
 h2 {
+  font-size: 2rem;
   font-weight: 300;
   margin-top: 40px;
 }
 
 h3 {
+  font-size: 1rem;
   text-transform: uppercase; 
   letter-spacing: 0.3em;
   margin-bottom: 7px;
@@ -49,9 +51,10 @@ h3 {
 }
 
 h4 {
+  font-size: 2rem;
   font-size: 24px;
   margin-top: 15px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h4 a {
@@ -61,7 +64,7 @@ h4 a {
 p {
   margin: var(--space) 0;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
 }
 
