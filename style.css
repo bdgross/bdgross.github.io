@@ -207,18 +207,23 @@ figcaption {
   margin-bottom: 60px;
 }
 
-.ig-container {
+.viz-container {
   display: flex;
   flex-wrap: wrap; /* Allows them to stack on mobile */
   gap: 20px;       /* Space between the posts */
   justify-content: center;
 }
 
-.ig-container .instagram-media {
+.viz-container .instagram-media .desktop-wrap {
   flex: 1 1 350px !important; /* Grow, shrink, and set base width */
   margin: 0 !important;       /* Resets Instagram's default margins */
   max-width: 540px !important; /* Prevents them from getting too huge */
   min-width: 326px !important; 
+}
+
+.viz-container img {
+  width: 100%;
+  margin-top: 30px;
 }
 
 
