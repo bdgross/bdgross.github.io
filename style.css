@@ -214,11 +214,18 @@ figcaption {
   justify-content: center;
 }
 
-.viz-container .instagram-media .desktop-wrap {
+.viz-container .instagram-media {
   flex: 1 1 350px !important; /* Grow, shrink, and set base width */
   margin: 0 !important;       /* Resets Instagram's default margins */
   max-width: 540px !important; /* Prevents them from getting too huge */
   min-width: 326px !important; 
+}
+
+.viz-container .desktop-wrap {
+  flex: 1 1 350px; /* Grow, shrink, and set base width */
+  margin: 0;       /* Resets default margins */
+  max-width: 540px; /* Prevents from getting too huge */
+  min-width: 326px; 
 }
 
 .viz-container img {
