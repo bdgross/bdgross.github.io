@@ -221,7 +221,7 @@ figcaption {
   min-width: 326px !important; 
 }
 
-.desktop-wrap {
+.viz-container .desktop-wrap {
   flex: 1 1 350px; /* Grow, shrink, and set base width */
   margin: 0;       /* Resets default margins */
   max-width: 540px; /* Prevents from getting too huge */
