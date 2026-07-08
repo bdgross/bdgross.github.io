@@ -1,0 +1,5 @@
+const menuToggle = document.querySelector('.menu-toggle');
+ 7   const navLinks = document.querySelector('.nav-links'); menuToggle.addEventListener('click', () => {navLinks.classList.toggle('active');}); 
+ 8   const form = document.querySelector('#signup-form'); const emailInput = document.querySelector('#email'); form.addEventListener('submit', (event) => { 
+ 9   if (!emailInput.value.includes('@')) { alert('Please enter a valid email address.'); event.preventDefault(); } }); const themeToggleBtn =   
+10  document.querySelector('#theme-toggle'); themeToggleBtn.addEventListener('click', () => { document.body.classList.toggle('dark-mode'); const isDarkMode = document.body.classList.contains('dark-mode'); localStorage.setItem('theme', isDarkMode ? 'dark' : 'light'); }); const scrollTopBtn = document.querySelector('#scroll-top'); window.addEventListener('scroll', () => { if (window.scrollY > 300) { scrollTopBtn.style.display = 'block'; } else { scrollTopBtn.style.display = 'none'; } }); scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
