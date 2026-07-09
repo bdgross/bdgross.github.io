@@ -187,10 +187,6 @@ img {
   transition: transform 0.3s ease;
 }
 
-.grid img.zoomed {
-  transform: scale(1.5);
-}
-
 .full {
   width: 100%;
 }
@@ -239,8 +235,6 @@ figcaption {
   margin-top: 30px;
 }
 
-
-
 @media only screen and (max-width: 600px) {
   .grid {
     width: 100%;
@@ -249,4 +243,10 @@ figcaption {
   img {
     width: 100%;
   }
+}
 
+@media (min-width: 1024px) {
+  .grid img.zoomed {
+    transform: scale(1.5);
+  }
+}
