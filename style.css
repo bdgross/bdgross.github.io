@@ -245,7 +245,7 @@ figcaption {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .grid img.zoomed {
     transform: scale(1.5);
   }
