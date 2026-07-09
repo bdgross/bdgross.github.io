@@ -92,7 +92,7 @@ hr {
   height: 1px;
   border-width: 0;
   color:#808080;
-  background-color: var(--color-bg);
+  background-color: var(--background);
 }
 
 ul {
