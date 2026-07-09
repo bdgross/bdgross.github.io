@@ -1,5 +1,6 @@
 function toggleZoom(img) {
     img.classList.toggle('zoomed');
+    grid.classList.toggle('zoomed');
   }
 
 document.addEventListener('DOMContentLoaded', function() {
