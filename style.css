@@ -261,6 +261,7 @@ figcaption {
     height: 100%;
     place-items: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
   }
   
   .grid img.zoomed {
@@ -268,3 +269,27 @@ figcaption {
     width: auto;
   }
 }
+
+/* 
+.grid.zoomed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.grid.zoomed img {
+  max-height: 95vh;
+  max-width: 95vw;
+  width: auto;
+  height: auto;
+  margin: 0;
+  border: none;
+}
+*/
