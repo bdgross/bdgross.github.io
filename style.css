@@ -172,6 +172,7 @@ figure {
 
 .grid {
   width: 49%;
+  cursor: pointer;
 }
 
 img {
