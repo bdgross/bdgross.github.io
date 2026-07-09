@@ -1,6 +1,11 @@
 function toggleZoom(element) {
   element.classList.toggle('zoomed');
 
+  const img = element.querySelector('img');
+  if (img) {
+    img.classList.toggle('zoomed');
+  }
+
     // Allow closing by pressing Escape
   if (element.classList.contains('zoomed')) {
     document.addEventListener('keydown', closeZoomOnEscape);
@@ -53,3 +58,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });  
+
+
