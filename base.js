@@ -5,9 +5,7 @@ function toggleZoom(element) {
 document.addEventListener('DOMContentLoaded', function() {
   const gridDivs = document.querySelectorAll('.grid');
   gridDivs.forEach(div => {
-    div.addEventListener('click', function(e) {
-      // Stop propagation if you don't want clicks on images to also trigger the div listener
-      e.stopPropagation();
+    div.addEventListener('click', function() {
       toggleZoom(this);
     });
   });
@@ -16,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   gridImages.forEach(img => {
     img.addEventListener('click', function(e) {
       e.stopPropagation();
-      toggleZoom(this);
+      toggleZoom(this.parentElement); // Toggle the parent .grid div
     });
   });
 });
