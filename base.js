@@ -1,24 +1,21 @@
-function toggleZoom(div) {
-    div.classList.toggle('zoomed');
-  }
-
-function toggleZoom(img) {
-    img.classList.toggle('zoomed');
-  }
+function toggleZoom(element) {
+  element.classList.toggle('zoomed');
+}
 
 document.addEventListener('DOMContentLoaded', function() {
-  const gridDiv = document.querySelectorAll('.grid');
-  gridDiv.forEach(div => {
-    div.addEventListener('click', function() {
+  const gridDivs = document.querySelectorAll('.grid');
+  gridDivs.forEach(div => {
+    div.addEventListener('click', function(e) {
+      // Stop propagation if you don't want clicks on images to also trigger the div listener
+      e.stopPropagation();
       toggleZoom(this);
     });
   });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
   const gridImages = document.querySelectorAll('.grid img');
   gridImages.forEach(img => {
-    img.addEventListener('click', function() {
+    img.addEventListener('click', function(e) {
+      e.stopPropagation();
       toggleZoom(this);
     });
   });
