@@ -183,6 +183,12 @@ img {
 
 .grid img {
   width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.grid img.zoomed {
+  transform: scale(1.5);
 }
 
 .full {
