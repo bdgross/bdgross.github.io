@@ -18,7 +18,7 @@ function closeZoomOnEscape(e) {
     }
   }
 }
-
+/*
 document.addEventListener('DOMContentLoaded', function() {
   const gridDivs = document.querySelectorAll('.grid');
   gridDivs.forEach(div => {
@@ -35,13 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-
-  
-
-/*
-
-
+*/
 document.addEventListener('DOMContentLoaded', function() {
   const gridDivs = document.querySelectorAll('.grid');
   gridDivs.forEach(div => {
@@ -58,4 +52,4 @@ document.addEventListener('DOMContentLoaded', function() {
       toggleZoom(this.closest('.grid'));
     });
   });
-});  */
+});  
