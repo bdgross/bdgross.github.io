@@ -248,10 +248,10 @@ figcaption {
   img {
     width: 100%;
   }
-}
 
 h2 {
   font-size: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
