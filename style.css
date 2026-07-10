@@ -201,6 +201,10 @@ img {
   margin-bottom: 0;
 }
 
+.full .grid {
+  width: 100%;
+}
+
 figcaption {
   font-size: 1rem;
 /*  color: #595959; */
