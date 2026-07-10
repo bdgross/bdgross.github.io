@@ -261,7 +261,7 @@ figcaption {
   }
 
   h1 {
-  font-size: 4rem
+  font-size: 4rem;
   line-height: 3.75rem;
   }
 }
