@@ -30,8 +30,6 @@ body, h1, h2, h3, h4, figure, blockquote, dl, dd {
   color: var(--text);
 }
 
-
-/* — Layout / Container — */
 .container {
   max-width: 768px;
   margin: 0 auto;
@@ -86,7 +84,6 @@ a {
   color: var(--text);
 }
 
-/* Make sure focus indicators are visible */
 a:focus, button:focus {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
