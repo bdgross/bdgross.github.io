@@ -249,6 +249,132 @@ figcaption {
   margin-top: 30px;
 }
 
+/* Core Wrapper Layout */
+.carousel-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Horizontal Scroll Container */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; /* Enables horizontal snapping */
+  scrollbar-width: none;        /* Hides scrollbar on Firefox */
+}
+
+/* Hides scrollbar on Chrome, Safari, and Opera */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Slide Styling */
+.slide {
+  flex: 0 0 100%;               /* Forces each slide to be full width */
+  width: 100%;
+  height: 350px;
+  scroll-snap-align: start;     /* Snap target position */
+  
+  /* Centering slide content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  background: #34495e;
+}
+
+/* Alternating Background Colors for Demo */
+#slide-2 { background: #e74c3c; }
+#slide-3 { background: #2ecc71; }
+
+/* Navigation Dots Layout */
+.carousel-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+/* Dot Item Styles */
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.nav-dot:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}/* Core Wrapper Layout */
+.carousel-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Horizontal Scroll Container */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; /* Enables horizontal snapping */
+  scrollbar-width: none;        /* Hides scrollbar on Firefox */
+}
+
+/* Hides scrollbar on Chrome, Safari, and Opera */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Slide Styling */
+.slide {
+  flex: 0 0 100%;               /* Forces each slide to be full width */
+  width: 100%;
+  height: 350px;
+  scroll-snap-align: start;     /* Snap target position */
+  
+  /* Centering slide content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  background: #34495e;
+}
+
+/* Alternating Background Colors for Demo */
+#slide-2 { background: #e74c3c; }
+#slide-3 { background: #2ecc71; }
+
+/* Navigation Dots Layout */
+.carousel-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+/* Dot Item Styles */
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.nav-dot:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 @media only screen and (max-width: 767px) {
   .grid {
   width: 100%;
