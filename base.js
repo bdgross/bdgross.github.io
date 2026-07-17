@@ -23,24 +23,7 @@ function closeZoomOnEscape(e) {
     }
   }
 }
-/*
-document.addEventListener('DOMContentLoaded', function() {
-  const gridDivs = document.querySelectorAll('.grid');
-  gridDivs.forEach(div => {
-    div.addEventListener('click', function() {
-      toggleZoom(this);
-    });
-  });
 
-  const gridImages = document.querySelectorAll('.grid img');
-  gridImages.forEach(img => {
-    img.addEventListener('click', function(e) {
-      e.stopPropagation();
-      toggleZoom(this.parentElement); // Toggle the parent .grid div
-    });
-  });
-});
-*/
 document.addEventListener('DOMContentLoaded', function() {
   const gridDivs = document.querySelectorAll('.grid');
   gridDivs.forEach(div => {
@@ -59,4 +42,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });  
 
-
+document.querySelectorAll('.nav-dot').forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+      document.getElementById(targetId).scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest', /* Key line: prevents outer page jumping */
+        inline: 'start'
+      });
+    });
+  });
