@@ -348,6 +348,14 @@ figcaption {
   background: #34495e;
 }
 
+/* Forces images to fill the slide space perfectly */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops image cleanly without stretching it */
+  display: block;    /* Removes default inline spacing at the bottom */
+}
+
 /* Alternating Background Colors for Demo */
 #slide-2 { background: #e74c3c; }
 #slide-3 { background: #2ecc71; }
