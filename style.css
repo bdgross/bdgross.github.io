@@ -312,10 +312,14 @@ figcaption {
 .nav-dot:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }/* Core Wrapper Layout */
+
 .carousel-wrapper {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Creates spacing between image and dots */
 }
 
 /* Horizontal Scroll Container */
@@ -362,12 +366,13 @@ figcaption {
 
 /* Navigation Dots Layout */
 .carousel-nav {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
+  justify-content: center;
   gap: 10px;
+  position: relative; /* Removes it from floating over image */
+  bottom: 0;
+  left: 0;
+  transform: none;
 }
 
 /* Dot Item Styles */
