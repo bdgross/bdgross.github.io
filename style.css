@@ -375,6 +375,10 @@ figcaption {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+.slide:target {
+  scroll-margin-top: 0; 
+}
+
 @media only screen and (max-width: 767px) {
   .grid {
   width: 100%;
