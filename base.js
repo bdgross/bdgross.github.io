@@ -42,13 +42,49 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });  
 
-document.querySelectorAll('.nav-dot').forEach(button => {
-    button.addEventListener('click', () => {
-      const targetId = button.getAttribute('data-target');
-      document.getElementById(targetId).scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest', /* Key line: prevents outer page jumping */
-        inline: 'start'
+  // Wrapped in a DOMContentLoaded function to guarantee the elements exist before running
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector('.carousel-track');
+      const slides = document.querySelectorAll('.carousel-slide');
+      const dots = document.querySelectorAll('.nav-dot');
+
+      // 1. CLICK TO SCROLL FUNCTION
+      dots.forEach(button => {
+        button.addEventListener('click', () => {
+          const targetId = button.getAttribute('data-target');
+          const targetSlide = document.getElementById(targetId);
+          
+          if (targetSlide) {
+            targetSlide.scrollIntoView({
+              behavior: 'smooth',
+              block: 'nearest',
+              inline: 'start'
+            });
+          }
+        });
       });
+
+      // 2. AUTOMATIC DOT HIGHLIGHT OBSERVER
+      const observerOptions = {
+        root: track,
+        threshold: 0.6 
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const activeId = entry.target.id;
+            
+            dots.forEach(dot => {
+              if (dot.getAttribute('data-target') === activeId) {
+                dot.classList.add('active');
+              } else {
+                dot.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      slides.forEach(slide => observer.observe(slide));
     });
-  });
