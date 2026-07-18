@@ -148,7 +148,7 @@ ul li a:hover {
 .topnav a:hover {
 /*  color: var(--color-link-hover); */
   font-weight: 700;
-  border-radius: 7px;
+/*  border-radius: 7px; */
   text-decoration: underline;
   text-underline-offset: 5px;
 }
