@@ -47,7 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!carousel) return;
 
   const slides = Array.from(carousel.querySelectorAll('.slide'));
-  const wrapper = carousel.closest('.carousel-wrapper');
+  if (!slides.length) return;
+
+  // Prefer the explicit wrapper but fall back to the carousel element itself
+  const wrapper = carousel.closest('.carousel-wrapper') || carousel;
 
   // Create nav if missing
   let nav = wrapper.querySelector('.carousel-nav');
@@ -79,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (entry.isIntersecting) {
         const idx = slides.indexOf(entry.target);
         dots.forEach((d, i) => d.setAttribute('aria-pressed', i === idx ? 'true' : 'false'));
-        // mark aria-hidden for non-visible slides (optional)
         slides.forEach((s, i) => s.setAttribute('aria-hidden', i === idx ? 'false' : 'true'));
       }
     });
