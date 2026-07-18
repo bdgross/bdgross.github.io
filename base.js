@@ -1,5 +1,3 @@
-// base.js - robust version with logging and fallbacks
-
 function toggleZoom(element) {
   element.classList.toggle('zoomed');
 
