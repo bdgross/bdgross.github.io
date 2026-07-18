@@ -249,6 +249,7 @@ figcaption {
   margin-top: 30px;
 }
 
+<<<<<<< HEAD
     /* CORE LAYOUT STYLES */
     .carousel-wrapper {
       position: relative;
@@ -311,6 +312,8 @@ figcaption {
       transform: scale(1.2);
     }
 
+=======
+>>>>>>> parent of bb43862 (Add carousel layout and navigation styles)
 @media only screen and (max-width: 767px) {
   .grid {
   width: 100%;
