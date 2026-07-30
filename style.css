@@ -100,43 +100,101 @@ hr {
   background-color: var(--background);
 }
 
-ul {
-  list-style-type: inherit;
-  margin: 0;
-  padding: var(--space);
-  background-color: inherit;
-  /* display: flex; */
+/* Basic layout */
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+  background: #fff; /* adjust to your theme */
+  border-bottom: 1px solid #e6e6e6;
 }
 
-ul li {
-  margin: 14px 0px;
-  font-size: 20px;
-  font-weight: 300;
-}
-
-/* ul li a {
-  display: block;
-  color: #FFFFFF;
-  padding: 14px 16px;
+/* Title on left */
+.topnav .title {
+  font-weight: 700;
   text-decoration: none;
-} */
+  color: inherit;
+  margin-right: auto;
+}
 
-ul li a:hover {
-/*  background-color: var(--color-bg); */
-} 
+/* Menu links (desktop) */
+.topnav-menu {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
 
-/* — Navigation — */
+/* Hide the hamburger on wide screens */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+/* Simple hamburger lines */
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #111;
+  border-radius: 2px;
+  position: relative;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.hamburger::before { top: -6px; }
+.hamburger::after  { top: 6px; }
+
+/* MOBILE - collapse menu and show toggle */
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+
+  /* hide menu by default on small screens */
+  .topnav-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    display: none; /* hidden until opened */
+    border-top: 1px solid #e6e6e6;
+    z-index: 1000;
+  }
+  .topnav-menu a {
+    padding: 0.75rem 1rem;
+    display: block;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  /* when open, show */
+  .topnav-menu.open {
+    display: flex;
+  }
+}
+
+/* — OLD Navigation 
 .topnav {
   display: flex;
   gap: 0.5rem;
-/*  overflow: hidden; */
+/*  overflow: hidden; 
   max-width: 768px;
   margin: 30px auto;
   align-items: flex-end;
 }
 
 .topnav a {
-/*  color: var(--color-text); */
+/*  color: var(--color-text); 
   text-align: left;
   padding: 14px 14px;
   text-decoration: none;
@@ -146,16 +204,16 @@ ul li a:hover {
 }
 
 .topnav a:hover {
-/*  color: var(--color-link-hover); */
+/*  color: var(--color-link-hover); 
   font-weight: 700;
-/*  border-radius: 7px; */
+/*  border-radius: 7px; 
   text-decoration: underline;
   text-underline-offset: 5px;
 }
 
 .topnav a.active {
 /*  background-color: var(--color-bg); 
-  color: var(--color-text); */
+  color: var(--color-text); 
   text-decoration: underline;
   text-underline-offset: 5px;
   font-weight: 700;
@@ -167,7 +225,7 @@ ul li a:hover {
   padding-left: 14px;
   flex-grow: 4;
   font-weight: 600;
-}
+} - */
 
 figure {
   display: flex;
