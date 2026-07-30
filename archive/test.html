@@ -24,11 +24,20 @@
   </head>
 <body>
 
-<div class="topnav">
+<nav class="topnav" aria-label="Main navigation">
   <a class="title" href="/index.html">Brian Gross</a>
-  <a href="/projects.html">Digital</a>
-  <a href="/print.html">Print</a>
-</div>
+
+  <!-- toggle button for small screens -->
+  <button class="nav-toggle" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu">
+    <span class="hamburger" aria-hidden="true"></span>
+  </button>
+
+  <!-- menu links -->
+  <div class="topnav-menu" id="topnav-menu">
+    <a href="/projects.html">Digital</a>
+    <a href="/print.html">Print</a>
+  </div>
+</nav>  
 
 <div class="container">
 <h1>Visual Journalist & Design Leader</h1> 
