@@ -46,3 +46,96 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Lightweight lazy-loading for Instagram embeds.
+// Usage: replace <blockquote class="instagram-media" data-instgrm-permalink="..."> with
+// <div class="instagram-placeholder" data-permalink="https://www.instagram.com/p/POSTID/"></div>
+
+(function () {
+  const placeholders = () => Array.from(document.querySelectorAll('.instagram-placeholder'));
+
+  let instagramScriptLoaded = false;
+  function loadInstagramScript() {
+    if (instagramScriptLoaded || window.instgrm) { instagramScriptLoaded = true; return Promise.resolve(); }
+    return new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.async = true;
+      s.defer = true;
+      s.src = 'https://www.instagram.com/embed.js';
+      s.onload = () => {
+        instagramScriptLoaded = true;
+        resolve();
+      };
+      s.onerror = () => reject(new Error('Failed to load Instagram embed.js'));
+      document.body.appendChild(s);
+    });
+  }
+
+  function createBlockquote(permalink) {
+    const block = document.createElement('blockquote');
+    block.className = 'instagram-media';
+    block.setAttribute('data-instgrm-permalink', permalink);
+    block.setAttribute('data-instgrm-version', '14');
+    const a = document.createElement('a');
+    a.href = permalink;
+    a.textContent = 'View on Instagram';
+    a.target = '_blank';
+    a.rel = 'noopener';
+    block.appendChild(a);
+    return block;
+  }
+
+  function upgradePlaceholder(el) {
+    const permalink = el.dataset.permalink;
+    if (!permalink) return;
+    if (el.dataset.loaded) return; // already done
+    el.dataset.loaded = '1';
+
+    const block = createBlockquote(permalink);
+    el.innerHTML = '';
+    el.appendChild(block);
+
+    loadInstagramScript().then(() => {
+      if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === 'function') {
+        try { window.instgrm.Embeds.process(); } catch (e) { console.warn('instgrm.Embeds.process failed', e); }
+      }
+    }).catch((err) => {
+      // If script fails, leave link fallback in place
+      console.warn('Could not load Instagram embed script:', err);
+    });
+  }
+
+  function initObserver() {
+    const obsOptions = { root: null, rootMargin: '300px', threshold: 0.01 };
+    const io = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          upgradePlaceholder(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, obsOptions);
+
+    placeholders().forEach(p => {
+      // If already near viewport, upgrade immediately
+      const rect = p.getBoundingClientRect();
+      if (rect.top < window.innerHeight + 300) {
+        upgradePlaceholder(p);
+      } else {
+        io.observe(p);
+      }
+    });
+  }
+
+  if ('IntersectionObserver' in window) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initObserver);
+    } else {
+      initObserver();
+    }
+  } else {
+    // Fallback: load all embeds after load
+    window.addEventListener('load', () => {
+      placeholders().forEach(upgradePlaceholder);
+    });
+  }
+})();
