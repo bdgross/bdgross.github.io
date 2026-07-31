@@ -106,6 +106,7 @@ hr {
   align-items: center;
   gap: 1rem;
   padding: 0.6rem 1rem;
+  max-width: 768px;
  /* background: #fff; 
   border-bottom: 1px solid #e6e6e6; */
 }
