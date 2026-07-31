@@ -196,7 +196,7 @@ hr {
 
   /* hide menu by default on small screens */
   .topnav-menu {
-    position: absolute;
+    position: relative;
     top: 100%;
     right: 0;
     left: 0;
@@ -216,11 +216,11 @@ hr {
   /* when open, show */
   .topnav-menu.open {
     display: flex;
-  }
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0;
 }
-
-
-
 
 
 figure {
