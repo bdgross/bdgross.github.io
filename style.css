@@ -106,8 +106,8 @@ hr {
   align-items: center;
   gap: 1rem;
   padding: 0.6rem 1rem;
-  background: #fff; /* adjust to your theme */
-  border-bottom: 1px solid #e6e6e6;
+ /* background: #fff; 
+  border-bottom: 1px solid #e6e6e6; */
 }
 
 /* Title on left */
@@ -141,7 +141,7 @@ hr {
   display: block;
   width: 22px;
   height: 2px;
-  background: #111;
+  background: var(--text);
   border-radius: 2px;
   position: relative;
 }
@@ -164,7 +164,7 @@ hr {
     top: 100%;
     right: 0;
     left: 0;
-    background: #fff;
+/*  background: #fff; */
     flex-direction: column;
     gap: 0;
     display: none; /* hidden until opened */
