@@ -112,6 +112,11 @@ hr {
   border-bottom: 1px solid #e6e6e6; */
 }
 
+nav.topnav {
+  position: relative;
+  z-index: 1000; /* optional: ensure the menu appears above other content */
+}
+
 /* Title on left */
 .topnav .title {
   font-weight: 700;
@@ -122,6 +127,10 @@ hr {
 
 /* Menu links (desktop) */
 .topnav-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   display: flex;
   gap: 1rem;
   align-items: center;
