@@ -252,6 +252,7 @@ figcaption {
   }
   
   .zoomed img.zoomed {
+    position: relative;
     height: 95vh;
     width: auto;
   }
