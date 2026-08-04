@@ -251,7 +251,7 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.9);
   }
   
-  .grid img.zoomed {
+  .zoomed img.zoomed {
     height: 95vh;
     width: auto;
   }
@@ -260,4 +260,6 @@ figcaption {
     display: none;
   }
 }
+
+
 
