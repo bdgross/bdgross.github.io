@@ -134,14 +134,14 @@ hr {
 } 
 
 figure {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  width: 49%;
+  cursor: pointer;
 }
 
 .grid {
-  width: 49%;
-  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 img {
@@ -238,7 +238,7 @@ figcaption {
 }
 
 @media (min-width: 768px) {
-  .grid.zoomed {
+  .zoomed {
     display: grid;
     position: fixed;
     z-index: 999;
