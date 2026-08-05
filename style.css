@@ -134,7 +134,7 @@ hr {
 } 
 
 figure {
-  width: 100%;
+  width: 49%;
   cursor: pointer;
 }
 
@@ -228,7 +228,7 @@ figcaption {
   }
 
   figure {
-  width: 49%;
+  width: 100%;
   }
   
   img {
