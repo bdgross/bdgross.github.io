@@ -134,7 +134,7 @@ hr {
 } 
 
 figure {
-  width: 49%;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -225,6 +225,10 @@ figcaption {
 @media only screen and (max-width: 767px) {
   .grid {
   width: 100%;
+  }
+
+  figure {
+  width: 49%;
   }
   
   img {
