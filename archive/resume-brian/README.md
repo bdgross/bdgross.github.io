@@ -45,6 +45,10 @@ JOB TITLES: Should have a boldness level of 600. Set font-size to 1.5em.
 
 JOB ORGANIZATION: Should have a boldness level of 400 and italicize (using a CSS property) and set font-size to 1.5em.
 
+JOB DATES: Should have a boldness level of 700 and set font-size to 1em.
+
+CONTACT INFO, SKILLS, EDUCATION: The items in these lists should be 1em in font-size.
+
 #CSS 2 MODULE
 
 From GitHub Desktop: If you're on a new computer, clone GitHub pages repo to your desktop. If you're on the same computer, sync (i.e., in your GitHub desktop app, click "Fetch Origin" to pull your latest code into your local repo).
@@ -155,8 +159,6 @@ Add the following styles for a:visited (visited link) >> set color to #6e38c7
 
 18. Reminder: As you build this page, make at least 3 commits and syncs to your repo on GitHub.
 
-19. LAST STEP: Submit your GitHub link in ELMS by 11:59 p.m. ET, Oct. 4!
+19. LAST STEP: Submit your GitHub link in ELMS by 11:59 p.m. ET, Oct. 17!
 
-JOB DATES: Should have a boldness level of 700 and set font-size to 1em.
 
-CONTACT INFO, SKILLS, EDUCATION: The items in these lists should be 1em in font-size.
