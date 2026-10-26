@@ -1,0 +1,270 @@
+*, *::before, *::after {
+  box-sizing: border-box; 
+}
+
+:root {
+  --space: 14px;
+/*--color-bg: #FFFFFF;
+  --color-text: #222;
+  --color-link-hover: #ddd; */  
+  --background: #ffffff;
+  --text: #222222;
+  --link: #0066cc;
+  --accent: #ff6b6b;
+}
+
+/* Detect user's preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --text: #e0e0e0;
+    --link: #66b3ff;
+    --accent: #ff6b6b;
+  }
+}
+
+body, h1, h2, h3, h4, figure, blockquote, dl, dd {
+  margin: 0; 
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 14px;
+}
+
+/* — Typography — */
+h1 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 4.25rem;
+  letter-spacing: -0.1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1rem;
+  text-transform: uppercase; 
+  letter-spacing: 0.3em;
+  margin: 30px 0;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 2rem;
+  font-size: 24px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+h4 a {
+  text-decoration: none;
+}
+
+p {
+  margin: var(--space) 0;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+p strong {
+  font-weight: 600;
+}
+
+a {
+  color: var(--text);
+}
+
+hr {
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
+  height: 1px;
+  border-width: 0;
+  color:#808080;
+  background-color: var(--background);
+}
+
+/* - Navigation - */
+.topnav {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  max-width: 768px;
+  margin-top: 30px;
+  padding-left: 14px;
+}
+
+.topnav a {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1rem;
+  height: 30px;
+  flex-shrink: 1;
+}
+
+.topnav a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.topnav a.active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-weight: 700;
+}
+
+.topnav a.title {
+  font-size: 2rem;
+  padding-top: 0px;
+  padding-left: 14px;
+  flex-grow: 4;
+  font-weight: 600;
+} 
+
+figure {
+  width: 49%;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+img {
+  width: 48%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: solid;
+  border-color: #d3d3d3;
+  border-width: thin;
+  margin: 15px 0 15px 0;
+}
+
+.grid img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.full {
+  width: 100%;
+}
+
+.full img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.full .grid {
+  width: 100%;
+}
+
+figcaption {
+  font-size: 1rem;
+/*  color: #595959; */
+  margin-bottom: 75px;
+  margin-right: 75px;
+}
+
+.credit {
+  font-size: 1rem;
+  margin-bottom: 60px;
+}
+
+.viz-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows them to stack on mobile */
+  gap: 20px;       /* Space between the posts */
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.viz-container .instagram-media {
+  flex: 1 1 350px !important; /* Grow, shrink, and set base width */
+  margin: 0 !important;       /* Resets Instagram's default margins */
+  max-width: 540px !important; /* Prevents them from getting too huge */
+  min-width: 326px !important; 
+}
+
+.viz-container .desktop-wrap {
+  flex: 1 1 350px; /* Grow, shrink, and set base width */
+  margin: 0;       /* Resets default margins */
+  max-width: 540px; /* Prevents from getting too huge */
+  min-width: 326px; 
+}
+
+.viz-container img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.instagram-placeholder {
+  flex: 1 1 350px !important;
+  margin: 0 !important;
+  max-width: 540px !important;
+  min-width: 326px !important;
+  display: flex !important;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .grid {
+  width: 100%;
+  }
+
+  figure {
+  width: 100%;
+  }
+  
+  img {
+  width: 100%;
+  }
+
+  h1 {
+  font-size: 4rem;
+  line-height: 3.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .zoomed {
+    display: grid;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .zoomed img.zoomed {
+    position: relative;
+    height: 95vh;
+    width: auto;
+  }
+
+  .zoomed figcaption {
+    display: none;
+  }
+}
+
+
+
