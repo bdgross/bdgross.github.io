@@ -38,9 +38,9 @@ body, h1, h2, h3, h4, figure, blockquote, dl, dd {
 
 /* — Typography — */
 h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 300;
-  line-height: 4.25rem;
+  line-height: 3.75rem;
   letter-spacing: -0.1rem;
 }
 
@@ -236,8 +236,8 @@ figcaption {
   }
 
   h1 {
-  font-size: 4rem;
-  line-height: 3.75rem;
+  font-size: 3rem;
+  line-height: 2.75rem;
   }
 }
 
