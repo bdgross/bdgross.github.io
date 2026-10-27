@@ -45,7 +45,7 @@ h1 {
 }
 
 h1 strong {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h2 {
@@ -108,7 +108,8 @@ hr {
 /* - Navigation - */
 
 nav {
-    max-width: 768px;
+  max-width: 768px;
+  margin: 30px auto 0 auto;
 }
 
 .topnav {
@@ -117,7 +118,6 @@ nav {
   justify-content: flex-start;
   gap: 0.5rem;
   max-width: 768px;
-  margin-top: 30px;
   padding-left: 14px;
 }
 
