@@ -25,7 +25,8 @@
 
 body, h1, h2, h3, h4, figure, blockquote, dl, dd {
   margin: 0; 
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
   background-color: var(--background);
   color: var(--text);
 }
@@ -39,18 +40,18 @@ body, h1, h2, h3, h4, figure, blockquote, dl, dd {
 /* — Typography — */
 h1 {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 3.75rem;
   letter-spacing: -0.1rem;
 }
 
 h1 strong {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 2rem;
   margin-top: 20px;
 }
@@ -60,14 +61,14 @@ h3 {
   text-transform: uppercase; 
   letter-spacing: 0.3em;
   margin: 30px 0;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 h4 {
   font-size: 2rem;
   font-size: 24px;
   margin-top: 30px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h4 a {
@@ -81,8 +82,8 @@ p, ul {
   line-height: 1.2;
 }
 
-p strong {
-  font-weight: 600;
+b {
+  font-weight: 700;
 }
 
 a {
@@ -126,13 +127,14 @@ nav {
   text-align: left;
   text-decoration: none;
   font-size: 1rem;
+  font-weight: 400;
   height: 30px;
   flex-shrink: 1;
 }
 
 .topnav a::after {
   content: attr(data-label);
-  font-weight: 700;
+  font-weight: 800;
   visibility: hidden;
 }
 
@@ -140,17 +142,17 @@ nav {
 .topnav a.active {
   text-decoration: underline;
   text-underline-offset: 5px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .topnav a:hover {
-  font-weight: 700;
+  font-weight: 800;
   text-decoration: underline;
   text-underline-offset: 5px;
 }
 
 .topnav:has(a:not(.active):hover) .active {
-  font-weight: normal;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -208,6 +210,7 @@ figcaption {
 
 .credit {
   font-size: 1rem;
+  font-weight: 350;
   margin-bottom: 60px;
 }
 
@@ -265,9 +268,6 @@ figcaption {
   line-height: 2.75rem;
   }
 
-  h1 strong {
-  font-weight: bold;
-  }
 
 }
 
