@@ -75,7 +75,7 @@ h4 a {
   text-decoration: none;
 }
 
-p, ul {
+p, ul, li {
   margin: var(--space) 0;
   font-weight: 300;
   font-size: 1.25rem;
@@ -234,6 +234,14 @@ figcaption {
   margin: 0;       /* Resets default margins */
   max-width: 540px; /* Prevents from getting too huge */
   min-width: 326px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.viz-container .desktop-wrap .instagram-placeholder {
+  flex: 1 1 calc(50% - 10px) !important;
+  min-width: 0 !important;
 }
 
 .viz-container img {
@@ -268,6 +276,9 @@ figcaption {
   line-height: 2.75rem;
   }
 
+  .viz-container .desktop-wrap .instagram-placeholder {
+    flex-basis: 100% !important;
+  }
 
 }
 
@@ -295,6 +306,5 @@ figcaption {
     display: none;
   }
 }
-
 
 
