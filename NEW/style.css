@@ -174,7 +174,7 @@ figure {
 img {
   width: 48%;
   max-width: 100%;
-  height: auto;
+  height: fit-content;
   display: block;
   border: solid;
   border-color: #d3d3d3;
