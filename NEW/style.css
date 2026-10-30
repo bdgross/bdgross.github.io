@@ -13,15 +13,7 @@
   --accent: #ff6b6b;
 }
 
-/* Detect user's preference */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1a1a;
-    --text: #e0e0e0;
-    --link: #66b3ff;
-    --accent: #ff6b6b;
-  }
-}
+
 
 body, h1, h2, h3, h4, figure, blockquote, dl, dd {
   margin: 0; 
@@ -235,12 +227,10 @@ b.credit {
 
 .viz-container .desktop-wrap {
   flex: 1 1 350px; /* Grow, shrink, and set base width */
-  margin: 0;       /* Resets default margins */
-  max-width: 540px; /* Prevents from getting too huge */
-  min-width: 326px; 
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+/*  margin: 0;       /* Resets default margins */
+/*  max-width: 540px; /* Prevents from getting too huge */
+/*  min-width: 326px; */
+
 }
 
 .viz-container .desktop-wrap .instagram-placeholder {
@@ -264,6 +254,16 @@ b.credit {
 blockquote {
   border-left: 1px solid #333;
   padding-left: 28px;
+}
+
+/* Detect user's preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --text: #e0e0e0;
+    --link: #66b3ff;
+    --accent: #ff6b6b;
+  }
 }
 
 @media only screen and (max-width: 767px) {
