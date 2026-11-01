@@ -3,7 +3,7 @@
 }
 
 :root {
-  --space: 14px;
+  --space: 1rem;
 /*--color-bg: #FFFFFF;
   --color-text: #222;
   --color-link-hover: #ddd; */  
@@ -57,9 +57,8 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
-  font-size: 24px;
-  margin-top: 30px;
+  font-size: 1.5rem;
+  margin-top: 0px;
   font-weight: 700;
 }
 
@@ -186,7 +185,7 @@ img {
 
 .full img {
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .full .grid {
@@ -213,9 +212,9 @@ b.credit {
 .viz-container {
   display: flex;
   flex-wrap: wrap; /* Allows them to stack on mobile */
-  gap: 20px;       /* Space between the posts */
+  gap: 0 20px;       /* Space between the posts */
   justify-content: center;
-  margin-bottom: 60px;
+  margin-block: 30px;
 }
 
 .viz-container .instagram-media {
@@ -249,11 +248,15 @@ b.credit {
   max-width: 540px !important;
   min-width: 326px !important;
   display: flex !important;
+  margin-bottom: 30px !important;
 }
 
 blockquote {
-  border-left: 1px solid #333;
-  padding-left: 28px;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 7px 28px 14px 21px;
+  background-color: #e5eef2;
+  margin-block: 30px;
 }
 
 /* Detect user's preference */
@@ -263,6 +266,12 @@ blockquote {
     --text: #e0e0e0;
     --link: #66b3ff;
     --accent: #ff6b6b;
+  }
+
+  blockquote {
+    background-color: #1A110D;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
   }
 }
 
