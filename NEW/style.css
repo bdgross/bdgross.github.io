@@ -199,10 +199,9 @@ figcaption {
   margin-right: 75px;
 }
 
-.credit {
+.credit, .credit li {
   font-size: 1rem;
   font-weight: 350;
-  margin-bottom: 60px;
 }
 
 b.credit {
@@ -248,7 +247,7 @@ b.credit {
   max-width: 540px !important;
   min-width: 326px !important;
   display: flex !important;
-  margin-bottom: 30px !important;
+  margin-bottom: 15px !important;
 }
 
 blockquote {
@@ -269,7 +268,7 @@ blockquote {
   }
 
   blockquote {
-    background-color: #1A110D;
+    background-color: #333;
     border-right: 1px solid #999;
     border-bottom: 1px solid #999;
   }
