@@ -52,7 +52,7 @@ h3 {
   font-size: 1rem;
   text-transform: uppercase; 
   letter-spacing: 0.3em;
-  margin: 30px 0;
+  margin: var(--space) 0;
   font-weight: 800;
 }
 
@@ -67,7 +67,7 @@ h4 a {
 }
 
 p, ul, li {
-  margin: var(--space) 0;
+  margin: 0 0 var(--space) 0;
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.2;
@@ -82,18 +82,20 @@ a {
 }
 
 ul {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 18px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 18px;
+}
+
+footer {
+  margin: var(--space) auto;
+  max-width: 768px;
+  font-size: 0.75rem;
 }
 
 hr {
   width: 100%;
-  text-align: left;
-  margin-left: 0;
-  height: 1px;
-  border-width: 0;
-  color:#808080;
+  border: 1px solid #808080;
   background-color: var(--background);
 }
 
@@ -101,7 +103,7 @@ hr {
 
 nav {
   max-width: 768px;
-  margin: 30px auto 0 auto;
+  margin: 15px auto 15px auto;
 }
 
 .topnav {
