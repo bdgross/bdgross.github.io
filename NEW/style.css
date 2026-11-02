@@ -54,6 +54,7 @@ h3 {
   letter-spacing: 0.3em;
   margin: var(--space) 0;
   font-weight: 800;
+  color: #DC143C;
 }
 
 h4 {
@@ -227,7 +228,7 @@ blockquote p b {
   flex-wrap: wrap; /* Allows them to stack on mobile */
   gap: 0 1.5rem;       /* Space between the posts */
   justify-content: center;
-  margin-block: 2rem;
+  margin: 4rem 0 0.5rem 0;
 }
 
 .viz-container .instagram-media {
