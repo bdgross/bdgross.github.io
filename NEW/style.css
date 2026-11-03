@@ -54,7 +54,7 @@ h3 {
   letter-spacing: 0.3em;
   margin: var(--space) 0;
   font-weight: 800;
-  color: #DC143C;
+/*  color: #DC143C; */
 }
 
 h4 {
