@@ -213,7 +213,6 @@ video {
   font-size: 1rem;
   font-weight: 350;
   margin-bottom: 0.5rem;
-  line-height: 1.1;
 }
 
 blockquote {
@@ -224,7 +223,7 @@ blockquote {
 
 blockquote p b {
   font-weight: 700;
-  line-height: 0.5;
+  line-height: 1.0;
 }
 
 .viz-container {
