@@ -231,6 +231,12 @@ blockquote p b {
   flex-wrap: wrap; /* Allows them to stack on mobile */
   gap: 4rem 1.5rem;       /* Space between the posts */
 /*  justify-content: center; */
+  position: relative;  
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 1100px;
   margin: 4rem 0 0.5rem 0;
 }
 
@@ -242,7 +248,8 @@ blockquote p b {
 }
 
 .viz-container .desktop-wrap {
-  flex: 1 1 350px; /* Grow, shrink, and set base width */
+  flex: 1 1 calc(50% - 0.75rem); /* Grow, shrink, and set base width */
+  max-width: calc(50% - 0.75rem);
 /*  margin: 0;       /* Resets default margins */
 /*  max-width: 540px; /* Prevents from getting too huge */
 /*  min-width: 326px; */
