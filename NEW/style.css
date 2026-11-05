@@ -194,10 +194,9 @@ img {
 .full {
   width: 100vw;
   position: relative;
-  left: 50%;
-  right: auto;
+  left: auto;
   max-width: 1100px;
-  margin-inline: calc(50% - 50vw);
+  margin-inline: calc(50% - 550px);
   margin-top: 4rem;
 }
 
