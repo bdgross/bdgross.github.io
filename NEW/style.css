@@ -239,17 +239,18 @@ blockquote p b {
 }
 
 .viz-container {
-  display: flex;
-  flex-wrap: wrap; /* Allows them to stack on mobile */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Allows them to stack on mobile */
   gap: 4rem 1.5rem;       /* Space between the posts */
 /*  justify-content: center; */
   position: relative;  
   left: 50%;
-  right: auto;
+  margin-inline: auto;
   transform: translateX(-50%);
   width: 100vw;
   max-width: 1100px;
-  margin: 4rem 0 0.5rem 0;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
 }
 
 .viz-container .instagram-media {
@@ -260,8 +261,11 @@ blockquote p b {
 }
 
 .viz-container .desktop-wrap {
-  flex: 1 1 calc(50% - 0.75rem); /* Grow, shrink, and set base width */
-  max-width: calc(50% - 0.75rem);
+  width: 100%;
+  max-width: none;
+  margin:0;
+/*  flex: 1 1 calc(50% - 0.75rem);  */
+/*  max-width: calc(50% - 0.75rem); */
 /*  margin: 0;       /* Resets default margins */
 /*  max-width: 540px; /* Prevents from getting too huge */
 /*  min-width: 326px; */
@@ -324,6 +328,10 @@ blockquote p b {
   h1 {
   font-size: 3rem;
   line-height: 2.75rem;
+  }
+
+  .viz-container {
+    grid-template-columns: 1fr;
   }
 
   .viz-container .desktop-wrap .instagram-placeholder {
