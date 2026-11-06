@@ -315,7 +315,7 @@ blockquote p b {
   .grid {
     width: 100%;
     margin-left: 0;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     padding: 0 1rem;
   }
 
