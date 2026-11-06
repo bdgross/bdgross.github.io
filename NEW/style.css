@@ -313,7 +313,9 @@ blockquote p b {
 
 @media only screen and (max-width: 767px) {
   .grid {
-  width: 100%;
+    width: 100%;
+    margin-left: 0;
+    grid-template-columns: 1
   }
 
   figure {
