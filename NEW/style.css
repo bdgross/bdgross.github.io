@@ -26,7 +26,7 @@ body, h1, h2, h3, h4, figure, blockquote, dl, dd {
 .container {
   max-width: 768px;
   margin: 0 auto;
-  padding: 14px;
+  padding: 1rem;
 }
 
 /* — Typography — */
@@ -315,7 +315,8 @@ blockquote p b {
   .grid {
     width: 100%;
     margin-left: 0;
-    grid-template-columns: 1
+    grid-template-columns: 1;
+    padding: 0 1rem;
   }
 
   figure {
@@ -333,6 +334,7 @@ blockquote p b {
 
   .viz-container {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 
   .viz-container .desktop-wrap .instagram-placeholder {
