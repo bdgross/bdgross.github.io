@@ -97,7 +97,8 @@ footer {
 
 hr {
   width: 100%;
-  border: 1px solid #808080;
+  height: 0;
+  border-top: 1px solid;
   background-color: var(--background);
 }
 
