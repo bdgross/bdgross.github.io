@@ -251,7 +251,7 @@ blockquote p b {
   max-width: 1100px;
   margin-top: 4rem;
   margin-bottom: 0.5rem;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .viz-container .instagram-media {
@@ -295,8 +295,10 @@ blockquote p b {
 }
 
 .pdf-container {
-  width: 100%;  
-  height: 80vh; 
+  width: 100vw;  
+  height: 100vh;
+  display: block;
+  border: none; 
 }
 
 /* Detect user's preference */
