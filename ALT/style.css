@@ -31,7 +31,7 @@ body, h1, h2, h3, h4, figure, blockquote, dl, dd {
 
 /* — Typography — */
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 200;
   line-height: 3.75rem;
   letter-spacing: -0.05rem;
@@ -340,7 +340,7 @@ blockquote p b {
   }
 
   h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 2.75rem;
   }
 
