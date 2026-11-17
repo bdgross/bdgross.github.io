@@ -31,7 +31,7 @@ body, h1, h2, h3, h4, figure, blockquote, dl, dd {
 
 /* — Typography — */
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 200;
   line-height: 3.75rem;
   letter-spacing: -0.05rem;
@@ -259,7 +259,7 @@ blockquote p b {
   max-width: 1100px;
   margin-top: 4rem;
   margin-bottom: 0.5rem;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
 }
 
 .viz-container .instagram-media {
@@ -303,10 +303,17 @@ blockquote p b {
 }
 
 .pdf-container {
-  width: 100vw;  
-  height: 100vh;
+  width: 100%;  
+  max-width: 800px;
+  aspect-ratio: 8.5 / 11;
+  margin: 0 auto; 
+}
+
+.pdf-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
   display: block;
-  border: none; 
 }
 
 /* Detect user's preference */
@@ -340,7 +347,7 @@ blockquote p b {
   }
 
   h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 2.75rem;
   }
 
