@@ -102,7 +102,7 @@ ul {
 
 footer {
   margin: var(--space) auto;
-  max-width: 768px;
+  max-width: 1100px;
   font-size: 0.75rem;
   padding: 0 1rem;
 }
@@ -113,7 +113,7 @@ hr {
   height: 0;
   border-top: 1px solid;
   background-color: var(--background);
-  margin: 0 1rem;
+  margin: 0 auto;
 }
 
 /* - Navigation - */
