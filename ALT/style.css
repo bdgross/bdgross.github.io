@@ -183,7 +183,7 @@ nav {
   left: auto;
   margin-left: 0;
 /*  margin-left: calc(50% - 550px); */
-  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 figure {
@@ -214,7 +214,7 @@ img {
   position: relative;
   left: auto;
   max-width: 1100px;
-  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .full img {
