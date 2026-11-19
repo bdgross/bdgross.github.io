@@ -64,7 +64,7 @@ h3 {
   font-size: 1rem;
   text-transform: uppercase; 
   letter-spacing: 0.3em;
-  margin: calc(var(--space) * 2) 0;
+  margin: calc(var(--space) * 2) 0 var(--space) 0;
   font-weight: 800;
 /*  color: #DC143C; */
 }
@@ -278,7 +278,7 @@ blockquote p b {
 .viz-container .desktop-wrap {
   width: 100%;
   max-width: none;
-  margin: 0;
+  margin: 0 var(--space);
 /*  flex: 1 1 calc(50% - 0.75rem);  */
 /*  max-width: calc(50% - 0.75rem); */
 /*  margin: 0;       /* Resets default margins */
