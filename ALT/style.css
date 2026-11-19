@@ -51,21 +51,20 @@ h1 i {
   color: #DC143C; 
 }
 
-
 h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+h3 {
   font-size: 1rem;
   text-transform: uppercase; 
   letter-spacing: 0.3em;
   margin: var(--space) 0;
   font-weight: 800;
 /*  color: #DC143C; */
-}
-
-h3 {
-  font-size: 2rem;
-  font-weight: 200;
-  line-height: 2rem;
-  margin-top: 20px;
 }
 
 h4 {
