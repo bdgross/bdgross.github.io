@@ -109,7 +109,7 @@ footer {
 }
 
 hr {
-  width: calc(100% - (var(--space) *2));
+  width: 100%;
   max-width: calc(1100px - (var(--space) *2));
   height: 0;
   border-top: 1px solid;
@@ -342,7 +342,6 @@ blockquote p b {
     width: 100%;
     margin-left: 0;
     grid-template-columns: 1fr;
-    padding: 0 1rem;
   }
 
   figure {
