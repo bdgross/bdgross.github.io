@@ -24,9 +24,13 @@ body, h1, h2, h3, h4, figure, blockquote, dl, dd {
 }
 
 .container {
-  max-width: 768px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.topper {
+  max-width: 768px;
 }
 
 /* — Typography — */
