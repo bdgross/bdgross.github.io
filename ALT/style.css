@@ -365,6 +365,10 @@ blockquote p b {
     flex-basis: 100% !important;
   }
 
+  #expand {
+    display: none;
+  }
+
 }
 
 @media (min-width: 768px) {
