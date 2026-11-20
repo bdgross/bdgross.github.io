@@ -110,11 +110,12 @@ footer {
 
 hr {
   width: 100%;
-  max-width: calc(1100px - (var(--space) *2));
+  max-width: 1100px;
   height: 0;
   border-top: 1px solid;
   background-color: var(--background);
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* - Navigation - */
@@ -263,10 +264,9 @@ blockquote p b {
   left: 50%;
   margin-inline: auto;
   transform: translateX(-50%);
-  width: 100vw;
+  width: 100%;
   max-width: 1100px;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin: 1rem auto 0.5rem auto;
 }
 
 .viz-container .instagram-media {
